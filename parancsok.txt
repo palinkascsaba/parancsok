@@ -26,3 +26,8 @@ mv: áthelyezi a fájlt. pl: mv fájl mappa Most a fájl a mappában van, (relat
     át is lehet vele nevezni fájlokat: mv fájl fájlújnév
 chmod: el tudod venni magadtol a jogosultsagokat egy filehoz ha nem akarod elrontani veletlen pl chmod -w : nem tudod mar szerkeszteni
 rm: törlés -r mappát is tudsz vele törölni
+grep : keres a fileban szöveget -A(szám) -B(szám) elötte utána is adja a sort , -v '^--' : kiszedi a grep által berakott sorválasztót és akkor az eredeti sorokat kapjuk meg nem változik a sorszám -v: inverz, csak azokat mutatja meg amiben nincs benne amit '' be rakunk
+wc: word count + -l megadja a sorok számát, -m karakterek száma
+> redirect : fájlba tudod tenni az outputot pls wc -l szekvenciák.fastq > fastqsorok.txt
+>> append redirect: a végére teszi a fájlnak nem írja felül
+| pipe command, egymás után tudod vele végrehajtani a parancsokat anélkül, hogy külön külön kéne őket végrehajtanod az elozo parancs outputjával dolgozik
